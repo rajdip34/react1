@@ -10,7 +10,9 @@ class Counter extends Component {
   render() {
     return (
       <React.Fragment>
-        <span className={this.getBoots()}>{this.valuCunt()}</span>
+        <span style={this.styles} className={this.getBoots()}>
+          {this.valuCunt()}
+        </span>
         <button className="btn btn-secondary btn-sm">click me </button>
       </React.Fragment>
     );
